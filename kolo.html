@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/kolo.js"></script>
+    <title>Liczenie pola i obwodu koła</title>
+</head>
+<body>
+    <h1>Koło</h1>
+    <form action="javascript:void(0);">
+        <label for="circle">Podaj średnicę koła:</label>
+        <input onkeyup="calc()" type="text" id="circle" name="circle">
+        <button onclick="p()" id="btn">Licz pole</button>
+        <button onclick="o()" id="btn">Licz obwód</button>
+    </form>
+    <p id="result">Kliknij w przycisk "Licz pole" lub "Licz obwód"</p>
+</body>
+</html>

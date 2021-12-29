@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania JS</title>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            gap: 1rem;
+            background: #F1EDFF;
+        }
+        .confirm {
+            position: relative;
+            background: #2c2c54;
+            display: inline-block;
+            color: white;
+            font-weight: 600;
+            border: 0;
+            cursor: pointer;
+            height: 5em;
+            width: 20em;
+            line-height: 5em;
+            border-radius: 0.7em;
+            font-size: 1em;
+            overflow: hidden;
+            font-family: "Montserrat", sans-serif;
+            z-index: 0;
+            text-decoration: none;
+        }
+
+        .confirm::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #40407a;
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            width: 100%;
+            height: 0%;
+            margin: auto;
+            -webkit-transition: 0.5s linear;
+            transition: 0.5s linear;
+            z-index: -1;
+        }
+
+        .confirm:hover::before {
+            height: 25em;
+        }
+
+    </style>
+</head>
+<body>
+    <a class="confirm" href="zadanie1.html">Zadanie 1</a>
+    <a class="confirm" href="kolo.html">Koło</a>
+    <a class="confirm" href="kalkulator.html">Kalkulator</a>
+</body>
+</html>

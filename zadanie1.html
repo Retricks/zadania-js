@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/zadanie1.js"></script>
+    <title>System zamawiania zbiorników przewozowych</title>
+</head>
+<body>
+    <h1>Zamów zbiorniki przewozowe</h1>
+    <p>Zadzwoń do nas. aby zamówić palety przewozowe. 
+        Skorzystaj najpierw z kalkulatora poniżej, aby poznać ilość zbiorników, 
+        którą potrzebujesz zamówić do przewiezienia zadanej ilości płynów
+    </p>
+    <h4>Kalkulator zbiorników przewozowych</h4>
+    <form action="javascript:void(0);">
+        <label for="lq">Podaj ilość płynu do przewiezienia w litrach:</label>
+        <input type="number" id="lq" name="lq">
+        <button onclick="calc()" id="btn">Oblicz</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
